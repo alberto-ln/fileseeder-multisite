@@ -1,0 +1,9 @@
+@use "../../styles/settings/variables";
+
+.o-${NAME}{
+  border: 1px dotted blue ;
+  color: blue;
+}
+.c-${NAME}{
+  @include variables.boxed-container;
+}

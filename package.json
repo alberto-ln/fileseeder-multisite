@@ -1,0 +1,26 @@
+{
+  "name": "fileseeder",
+  "version": "1.0.0",
+  "description": "genera archivos mediante plantillas",
+  "main": "index.js",
+  "author": "TheCookies",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "create:organism": "python3 comand_fs.py org",
+    "create:molecule": "python3 comand_fs.py mol",
+    "create:atom": "python3 comand_fs.py atom",
+    "create:sanity-document": "python3 comand_fs.py sdoc",
+    "create:sanity-object": "python3 comand_fs.py sobj",
+    "create:gatsby-page": "python3 comand_fs.py gpag",
+    "create:gatsby-template": "python3 comand_fs.py gtemp",
+    "create:landing": "python3 comand_fs.py land",
+    "open:fileseeder": "python3 interface_fs.py",
+    "create:structure": "python3 bystructure_fs.py",
+    "clean:all": "python3 functions/cleaner.py",
+    "test:all": "yarn create:organism test && yarn create:molecule test && yarn create:atom test && yarn create:sanity-document test && yarn create:sanity-object test && yarn create:gatsby-page test && yarn create:gatsby-template test && yarn create:landing test"
+  },
+  "dependencies": {
+    "python3": "^0.0.1"
+  }
+}
